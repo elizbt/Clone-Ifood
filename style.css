@@ -1,0 +1,130 @@
+/* agora vamos estilizar essa primeira parte, fiz tudo de uma vez pra voce entender o funcionamento do reset no css 
+pronto, tiramos todos os estilos que vem por padrão
+agora vamos estilizar os elementos, primeiro botoes
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    outline: none;
+    color: #666;
+    background: none;
+    border: none;
+  }
+  
+  body {
+    font-family: roboto;
+    background: #eee;
+  }
+  
+  button {
+    background: red;
+    color: white;
+    padding: 10px 20px; /* 10 em cima e em baixo 20 dos lados*/
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background: rgb(255, 0, 0, 0.8);
+    cursor: pointer;
+  }
+  
+  input {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  /* agora vamos pro header*/
+  
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 30px;
+  }
+  
+  .menu > a {
+    margin: 10px;
+  }
+  
+  .menu > a:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .menu > button {
+    background: white;
+    color: red;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .menu > button:hover {
+    background: red;
+    color: white;
+    border: red;
+    cursor: pointer;
+  }
+  
+  main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+    
+  main > img {
+    width: 100px;
+    height: 60px;
+    margin: 20px 0; 
+  }
+  
+  main > h1, p, input, div {
+    margin: 10px 0;
+  }
+  
+  .tags {
+    display: flex;
+  }
+  
+  .tags > div  > a{
+    margin: 0 10px;
+    border: 2px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  
+  .cupom {
+    background: white;
+    width: 300px;
+  }
+  
+  .cupom {
+    background: white;
+    width: 300px;
+    padding: 10px 0 10px 60px;
+    border-radius: 6px;
+    
+    position: fixed;
+    right: 10px;
+  }
+  
+  .cupom > i {
+    position: fixed;
+    right: 20px;
+  }
+  
+  .cupom > i:hover {
+    cursor: pointer;
+  }
+  
+  .cupom > a {
+    color: red;
+  }
